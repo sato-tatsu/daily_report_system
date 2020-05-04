@@ -18,7 +18,7 @@ import javax.persistence.Table;
                     query = "select e from Employee as e order by e.id DESC"
                     ),
             @NamedQuery(
-                    name = "getEmployeeCount",
+                    name = "getEmployeesCount",
                     query = "select count(e) from Employee as e"
                     ),
             @NamedQuery(
@@ -27,7 +27,7 @@ import javax.persistence.Table;
                     ),
             @NamedQuery(
                     name = "checkLoginCodeAndPassword",
-                    query = "select e from Employee as e where e.delete_flag = 0 and e.code = :code"
+                    query = "select e from Employee as e where e.delete_flag = 0 and e.code = :code and e.password = :pass"
                     )
         }
 )
