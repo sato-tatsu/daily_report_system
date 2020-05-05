@@ -60,6 +60,6 @@ public class EmployeesIndexServlet extends HttpServlet {
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/employees/index.jsp");
         rd.forward(request, response);
-        }
+    }
 
 }
